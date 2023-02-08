@@ -1,10 +1,10 @@
-<html lang="en">
+<!DOCTYPE html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Smile Project Temp site</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,38 +13,19 @@
         tailwind.config = {
             darkMode: "class",
             theme: {
-                fontFamily: {
-                    "maintxt": ["Source Sans Pro", "sans-serif"]
-                }
-                , container: {
+                container: {
                     center: true,
-                },
+                }
             },
         }
     </script>
-
-    <style>
-        @layer base {
-            @font-face {
-                @font-face {
-                    font-family: 'liberation_sans_narrowregular';
-                    src: url('smileFont/liberation-sans-narrow-4-webfont.woff2') format('woff2'),
-                        url('smileFont/liberation-sans-narrow-4-webfont.woff') format('woff');
-                    font-weight: normal;
-                    font-style: normal;
-
-                }
-            }
-        }
-    </style>
 </head>
 
-<body class="flex flex-col h-screen">
+<body class="flex flex-col h-screen ">
 
     <!--Header-->
     <header class="container flex justify-center">
         <nav class="justify-center p-6">
-
             <img src="images/title-removebg-preview.png" alt="">
         </nav>
     </header>
@@ -56,7 +37,7 @@
 
         <div class="">
             <a href="#" class="grid place-items-center h-auto">
-                <img class="h-96 w-96" src="images/cover.jpg" alt="" />
+                <img class="w-auto md:h-96 md:w-96" src="images/cover.jpg" alt="" />
             </a>
             <div class="p-5">
                 <a href="#">
@@ -73,41 +54,41 @@
 
     <section>
         <div class="container flex justify-center flex-grow text-center p-2">
-            <div class="grid grid-cols-4 gap-2">
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+            <div class="lg:grid lg:grid-cols-4 gap-2">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>01 - Tekka Two</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>02 - Digital Decade</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex bg-none w-5/6justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>03 - I Am Computer</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>04 - Trojan</p>
@@ -117,52 +98,52 @@
             </div>
         </div>
 
-        <div class="container flex justify-center flex-grow text-center p-2">
-            <div class="grid grid-cols-5 gap-2">
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+        <div class="container flex justify-center gap-2 flex-grow text-center p-2">
+            <div class="lg:grid lg:grid-cols-5 gap-2">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>05 - Clockmode</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>06 - European Extreme</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>07 - Feed Me Data</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>08 - Hope</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>09 - Skin Memory</p>
@@ -172,52 +153,52 @@
             </div>
         </div>
 
-        <div class="container flex justify-center flex-grow text-center p-2">
-            <div class="grid grid-cols-5 gap-2">
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+        <div class="container flex justify-center gap-2 flex-grow text-center p-2">
+            <div class="lg:grid lg:grid-cols-5 gap-2">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>10 - Long Grey Line</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>11 - Wander</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>12 - Rose Figure I Loved</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>13 - WAYGTDWTROYL2</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <div class="rounded-lg shadow-lg w-11/12">
+                <div class="flex justify-center gap-2">
+                    <div class="shadow-lg w-11/12">
                         <a href="#!">
-                            <img class="rounded-t-lg" src="images/placeholder.jpg" alt="" />
+                            <img class="" src="images/placeholder.jpg" alt="" />
                         </a>
                         <div class="">
                             <p>14 - Clockwerk</p>
