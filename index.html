@@ -20,7 +20,13 @@
                 }
                 , container: {
                     center: true,
-                },
+                }
+                , colors: {
+                    sixty: "D6CECD"
+                    ,thirty: "B88665"
+                    ,ten: "D7BBA8"
+                    ,text: "black"
+                }
             },
         }
         module.exports = {
@@ -29,7 +35,7 @@
     </script>
 </head>
 
-<body class="bg-slate-500 dark:bg-slate-800 text-slate-800 dark:text-slate-50 font-sans">
+<body class="bg-slate-sixty dark:bg-slate-800 text-slate-text dark:text-slate-50 font-sans">
     <!--Header-->
     <header>
         <nav class="flex items-center justify-between flex-wrap  p-12">
@@ -79,7 +85,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
             </button>
-            <div id="dots" class="absolute bottom-2 right-1/2 fill-slate-50 w-8 h-auto flex gap-1"></div>
+            <div id="dots" class="absolute bottom-2 right-1/2 w-8 h-auto flex gap-1"></div>
 
         </div>
     </section>
@@ -102,7 +108,7 @@
             const dots = Object.keys(images)
                 .map(
                     (imageKey) =>
-                        `<button onclick="showImage(${imageKey})"><svg id=${`svg-${imageKey}`} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg></button>`
+                    `<button onclick="showImage(${imageKey})"><svg id=${`svg-${imageKey}`} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg></button>`
                 )
                 .join('');
 
@@ -148,7 +154,7 @@
 
             const svgImage = document.getElementById(`svg-${imageKey}`);
 
-            svgImage.setAttribute('fill', '#334155');
+            svgImage.setAttribute('fill', '#ffffff');
         };
 
         if (Object.keys(images).length) {
