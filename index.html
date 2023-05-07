@@ -10,7 +10,11 @@
     <title>Inishowen Garden Sheds Temp site</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <style>
+        #dots{
+            fill: #94a3b8;
+        }
+    </style>
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -23,22 +27,19 @@
                 }
                 , colors: {
                     sixty: "D6CECD"
-                    ,thirty: "B88665"
-                    ,ten: "D7BBA8"
+                    ,ten: "EBD2B4"
+                    ,thirty: "D7BBA8"
                     ,text: "black"
                 }
             },
         }
-        module.exports = {
-            darkMode: "class"
-        }
     </script>
 </head>
 
-<body class="bg-slate-sixty dark:bg-slate-800 text-slate-text dark:text-slate-50 font-sans">
+<body class="bg-sixty dark:bg-slate-800 text-slate-text dark:text-slate-50 font-sans">
     <!--Header-->
     <header>
-        <nav class="flex items-center justify-between flex-wrap  p-12">
+        <nav class="flex items-center justify-between flex-wrap p-12">
             <a href="#">
                 <div class="flex items-center flex-shrink-0 mr-6">
                     <svg xmlns="http://www.w3.org/2000/svg" class="fill-current h-12 w-12" width="54" height="54"
@@ -59,7 +60,7 @@
                 <a href="#responsive-header"
                     class="block mt-4 sm:inline-block sm:mt-0 hover:text-black mr-4">Services</a>
                 <div><a href="#"
-                        class="inline-block text-sm px-4 py-2 leading-none border rounded border-grey-200 dark:border-grey-700 hover:border-transparent hover:text-slate-500 hover:bg-white mt-4 sm:mt-0">Contact
+                        class="block transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-ten ">Contact
                         us</a></div>
             </div>
         </nav>
@@ -146,7 +147,7 @@
                 `svg-${currentImageIndex}`
             );
 
-            currentSvgImage.setAttribute('fill', '#e2e8f0');
+            currentSvgImage.setAttribute('fill', '#94a3b8');
 
             currentImageIndex = imageKey;
 
@@ -154,7 +155,7 @@
 
             const svgImage = document.getElementById(`svg-${imageKey}`);
 
-            svgImage.setAttribute('fill', '#ffffff');
+            svgImage.setAttribute('fill', '#2563eb');
         };
 
         if (Object.keys(images).length) {
@@ -225,7 +226,7 @@
     <!--Our Products-->
 
     <!--Why Us-->
-    <section class="p-12 bg-[#3ca4cf]">
+    <section class="p-12">
         <div class="h-32 uppercase text-center">
             <h1 class="h1 text-5xl">Why Us?</h1>
         </div>
@@ -244,16 +245,14 @@
                 </div>
                 <div
                     class="col-span-12 md:col-span-auto md:col-start-7 md:col-end-13 md:row-start-1 md:row-end-1 md:mt-0 relative z-10 md:px-0">
-                    <div class="p-4 md:p-8 bg-slate-50 dark:bg-slate-800 shadow-lg">
+                    <div class="p-4 md:p-8 bg-thirty dark:bg-slate-800 shadow-lg">
                         <p class="mb-2 text-lg leading-none font-medium">
                             <a class="" href="#" title="Heading Link">
                                 About Us
                             </a>
                         </p>
                         <p class="mb-2 text-sm">
-                            We are dedicated to give your project the care it deserves, our dedicated team works around
-                            the
-                            clock to deliver your website on time
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lacinia mauris. Ut ac lectus augue. Donec molestie, erat eu consequat pellentesque, quam arcu scelerisque orci, a fringilla felis magna et dui. Proin dictum ultrices tellus at dapibus.
                         </p>
                         <p class="text-xs">
                             ABCDEFG
@@ -270,7 +269,7 @@
     <section class="text-gray-800 mt-4">
         <div class="px-8">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Contact us Today</h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400 mb-4">Blah Blah Text</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lacinia mauris. Ut ac lectus augue. Donec molestie, erat eu consequat pellentesque, quam arcu scelerisque orci, a fringilla felis magna et dui. Proin dictum ultrices tellus at dapibus.</p>
             <form method="post" class="">
                 <div class="w-full lg:w-5/12 lg:float-left">
                     <div class="h-[500px] w-full">
@@ -329,7 +328,7 @@
                         </div>
                         <div class="grid place-items-center p-4">
                             <button type="submit" name="submit" value="Send"
-                                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-600 duration-300 text-white bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-indigo-700 dark:focus:ring-blue-800">Submit</button>
+                                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-ten ">Submit</button>
                         </div>
                     </div>
                 </div>
