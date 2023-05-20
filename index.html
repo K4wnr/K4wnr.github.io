@@ -1,358 +1,351 @@
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title>Inishowen Garden Sheds Temp site</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            #dots {
+                fill: #94a3b8;
+            }
+        </style>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    fontFamily: {
+                        "maintxt": ["Source Sans Pro", "sans-serif"]
+                    }
+                    , container: {
+                        center: true,
+                    }
+                    , colors: {
+                        sixty: "D6CECD"
+                        , ten: "EBD2B4"
+                        , thirty: "D7BBA8"
+                        , text: "black"
+                    }
+                },
+            }
+        </script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <title>Inishowen Garden Sheds Temp site</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-        #dots {
-            fill: #94a3b8;
-        }
-    </style>
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                fontFamily: {
-                    "maintxt": ["Source Sans Pro", "sans-serif"]
-                }
-                , container: {
-                    center: true,
-                }
-                , colors: {
-                    sixty: "D6CECD"
-                    , ten: "EBD2B4"
-                    , thirty: "D7BBA8"
-                    , text: "black"
-                }
-            },
-        }
-    </script>
-</head>
+    <body class="bg-sixty dark:bg-slate-800 text-text dark:text-slate-50 font-sans">
+        
+        <!--Header-->
+        <header>
+            <nav class="flex items-center justify-between flex-wrap p-12">
+                <a href="#">
+                    <div class="flex items-center flex-shrink-0 mr-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current h-12 w-12" width="54" height="54"
+                            viewbox="0 0 28 28">
+                            <path fill-rule="evenodd"
+                                d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="font-semibold text-xl tracking-tight">Inishowen Garden Sheds</span>
+                    </div>
+                </a>
+                <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+                    <div class="text-sm sm:flex-grow">
+                        <p class="hover:text-black">(+353) 86 600 0950</p>
+                    </div>
+                    <a href="#responsive-header" class="block mt-4 sm:inline-block sm:mt-0 hover:text-black mr-4">Home</a>
+                    <a href="#responsive-header" class="block mt-4 sm:inline-block sm:mt-0 hover:text-black mr-4">About</a>
+                    <a href="#responsive-header"
+                        class="block mt-4 sm:inline-block sm:mt-0 hover:text-black mr-4">Services</a>
+                    <div><a href="#"
+                            class="block transition mb-5 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 font-medium rounded-lg text-sm w-full sm:w-auto mt-5 px-5 py-2.5 text-center bg-ten ">Contact
+                            us</a></div>
+                </div>
+            </nav>
+        </header>
+        <!--Header-->
 
-<body class="bg-sixty dark:bg-slate-800 text-slate-text dark:text-slate-50 font-sans">
-    
-    <!--Header-->
-    <header>
-        <nav class="flex items-center justify-between flex-wrap p-12">
-            <a href="#">
-                <div class="flex items-center flex-shrink-0 mr-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="fill-current h-12 w-12" width="54" height="54"
-                        viewbox="0 0 28 28">
-                        <path fill-rule="evenodd"
-                            d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
-                            clip-rule="evenodd" />
+        
+        <!--Carousel-->
+        <section class="w-full h-[24rem] justify-center items-center bg-gray-900 relative">
+
+            <div id="img" class="w-full h-full bg-no-repeat bg-center bg-cover items-center justify-center bg-fixed"
+                script="showFirstImage">
+                <button class="absolute left-0 top-1/3 h-1/3 px-2 flex items-center opacity-50 hover:opacity-100"
+                    onclick="showPrevious()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 stroke-current text-white" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
-                    <span class="font-semibold text-xl tracking-tight">Inishowen Garden Sheds</span>
-                </div>
-            </a>
-            <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
-                <div class="text-sm sm:flex-grow">
-                    <p class="hover:text-black">(+353) 86 600 0950</p>
-                </div>
-                <a href="#responsive-header" class="block mt-4 sm:inline-block sm:mt-0 hover:text-black mr-4">Home</a>
-                <a href="#responsive-header" class="block mt-4 sm:inline-block sm:mt-0 hover:text-black mr-4">About</a>
-                <a href="#responsive-header"
-                    class="block mt-4 sm:inline-block sm:mt-0 hover:text-black mr-4">Services</a>
-                <div><a href="#"
-                        class="block transition mb-5 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 font-medium rounded-lg text-sm w-full sm:w-auto mt-5 px-5 py-2.5 text-center bg-ten ">Contact
-                        us</a></div>
-            </div>
-        </nav>
-    </header>
-    <!--Header-->
+                </button>
+                <button class="absolute right-0 top-1/3 h-1/3 px-2 flex items-center opacity-50 hover:opacity-100"
+                    onclick="showNext()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 stroke-current text-white" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+                <div id="dots" class="absolute bottom-2 right-1/2 w-8 h-auto flex gap-1"></div>
 
-    
-    <!--Carousel-->
-    <section class="w-full h-[24rem] justify-center items-center bg-gray-900 relative">
-
-        <div id="img" class="w-full h-full bg-no-repeat bg-center bg-cover items-center justify-center bg-fixed"
-            script="showFirstImage">
-            <button class="absolute left-0 top-1/3 h-1/3 px-2 flex items-center opacity-50 hover:opacity-100"
-                onclick="showPrevious()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 stroke-current text-white" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-            </button>
-            <button class="absolute right-0 top-1/3 h-1/3 px-2 flex items-center opacity-50 hover:opacity-100"
-                onclick="showNext()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 stroke-current text-white" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </button>
-            <div id="dots" class="absolute bottom-2 right-1/2 w-8 h-auto flex gap-1"></div>
-
-        </div>
-    </section>
-    <script>
-        const images = {
-            0: 'images/a.jpg',
-            1: 'images/b.jpg',
-            2: 'images/c.jpg',
-        };
-
-        let currentImageIndex = 0;
-
-        const showFirstImage = () => {
-            const imgDiv = document.getElementById('img');
-
-            img.style.backgroundImage = `url(${images[currentImageIndex]})`;
-
-            const dotsDiv = document.getElementById('dots');
-
-            const dots = Object.keys(images)
-                .map(
-                    (imageKey) =>
-                        `<button onclick="showImage(${imageKey})"><svg id=${`svg-${imageKey}`} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg></button>`
-                )
-                .join('');
-
-            dotsDiv.innerHTML = dots;
-
-            showImage(currentImageIndex);
-        };
-
-        const showPrevious = () => {
-            const imgDiv = document.getElementById('img');
-            const previousIndex =
-                currentImageIndex - 1 < 0
-                    ? Object.keys(images).length - 1
-                    : currentImageIndex - 1;
-
-            img.style.backgroundImage = `url(${images[previousIndex]})`;
-            showImage(previousIndex);
-
-        };
-
-        const showNext = () => {
-            const imgDiv = document.getElementById('img');
-            const nextIndex =
-                currentImageIndex + 1 === Object.keys(images).length
-                    ? 0
-                    : currentImageIndex + 1;
-
-            img.style.backgroundImage = `url(${images[nextIndex]})`;
-            showImage(nextIndex);
-
-        };
-
-        const showImage = (imageKey) => {
-            const currentSvgImage = document.getElementById(
-                `svg-${currentImageIndex}`
-            );
-
-            currentSvgImage.setAttribute('fill', '#94a3b8');
-
-            currentImageIndex = imageKey;
-
-            img.style.backgroundImage = `url(${images[imageKey]})`;
-
-            const svgImage = document.getElementById(`svg-${imageKey}`);
-
-            svgImage.setAttribute('fill', '#2563eb');
-        };
-
-        if (Object.keys(images).length) {
-            showFirstImage();
-        }
-
-    </script>
-    <!--Carousel-->
-    
-
-    
-    <!--Our Products-->
-    <section class="p-16 w-7/8">
-        <div class="h-32  uppercase text-center">
-            <h1 class="h1 text-5xl">Our Products</h1>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-            <a href="#" class="border-2 rounded overflow-hidden">
-                <img class="w-full h-48 sm:h-64 md:h-72 lg:h-96" src="images/steel.jpg" alt="Generic Shed">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Steel Structures
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="border-2 rounded overflow-hidden">
-                <img class="w-full h-48 sm:h-64 md:h-72 lg:h-96" src="images/composite.jpg" alt="Generic Shed">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Composite Structures
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="border-2 rounded overflow-hidden">
-                <img class="w-full h-48 sm:h-64 md:h-72 lg:h-96" src="images/wood.jpg" alt="Generic Shed">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Wooden Structures
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-    <!--Our Products-->
-    
-
-    
-    <!--Why Us-->
-    <section class="p-12">
-        <div class="h-32 uppercase text-center">
-            <h1 class="h1 text-5xl">Why Us?</h1>
-        </div>
-        <!--About Us-->
-        <section class="container w-full mt-4">
-            <div
-                class="grid grid-cols-12 md:items-center w-full max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl">
-                <div class="col-span-12 md:col-span-auto md:col-start-1 md:col-end-9 md:row-start-1 md:row-end-1">
-                    <a class="" href="#" title="Image Link">
-                        <picture class="relative block w-full h-0 pb overflow-hidden shadow-lg h-1/2"
-                            style="padding-top: 75%;">
-                            <img class="absolute inset-0 w-full h-full object-cover" src="images/d.jpg"
-                                alt="A random image from Unsplash">
-                        </picture>
-                    </a>
-                </div>
-                <div
-                    class="col-span-12 md:col-span-auto md:col-start-7 md:col-end-13 md:row-start-1 md:row-end-1 md:mt-0 relative z-10 md:px-0">
-                    <div class="p-4 md:p-8 bg-thirty dark:bg-slate-800 shadow-lg">
-                        <p class="mb-2 text-lg leading-none font-medium">
-                            <a class="" href="#" title="Heading Link">
-                                About Us
-                            </a>
-                        </p>
-                        <p class="mb-2 text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lacinia mauris. Ut
-                            ac lectus augue. Donec molestie, erat eu consequat pellentesque, quam arcu scelerisque orci,
-                            a fringilla felis magna et dui. Proin dictum ultrices tellus at dapibus.
-                        </p>
-                        <p class="text-xs">
-                            ABCDEFG
-                        </p>
-                    </div>
-                </div>
             </div>
         </section>
-        <!--About Us-->
-    </section>
-    <!--Why Us-->
-    
+        <script>
+            const images = {
+                0: 'images/a.jpg',
+                1: 'images/b.jpg',
+                2: 'images/c.jpg',
+            };
 
-    
-    <!--Form-->
-    <section class="text-gray-800 mt-4">
-        <div class="px-8">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Contact us Today</h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Maecenas vitae lacinia mauris. Ut ac lectus augue. Donec molestie, erat eu consequat
-                pellentesque, quam arcu scelerisque orci, a fringilla felis magna et dui. Proin dictum ultrices tellus
-                at dapibus.</p>
-            <form method="post" class="">
-                <div class="w-full lg:w-5/12 lg:float-left">
-                    <div class="h-[500px] w-full">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13261.406183338111!2d-7.047084742714583!3d55.19079229422324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48601b668df48bcb%3A0xa00c7a99731e400!2sGort%20North%2C%20Moville%2C%20Co.%20Donegal!5e0!3m2!1sen!2sie!4v1681853314905!5m2!1sen!2sie"
-                            class="h-full w-full " frameborder="0" allowfullscreen></iframe>
+            let currentImageIndex = 0;
+
+            const showFirstImage = () => {
+                const imgDiv = document.getElementById('img');
+
+                img.style.backgroundImage = `url(${images[currentImageIndex]})`;
+
+                const dotsDiv = document.getElementById('dots');
+
+                const dots = Object.keys(images)
+                    .map(
+                        (imageKey) =>
+                            `<button onclick="showImage(${imageKey})"><svg id=${`svg-${imageKey}`} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg></button>`
+                    )
+                    .join('');
+
+                dotsDiv.innerHTML = dots;
+
+                showImage(currentImageIndex);
+            };
+
+            const showPrevious = () => {
+                const imgDiv = document.getElementById('img');
+                const previousIndex =
+                    currentImageIndex - 1 < 0
+                        ? Object.keys(images).length - 1
+                        : currentImageIndex - 1;
+
+                img.style.backgroundImage = `url(${images[previousIndex]})`;
+                showImage(previousIndex);
+
+            };
+
+            const showNext = () => {
+                const imgDiv = document.getElementById('img');
+                const nextIndex =
+                    currentImageIndex + 1 === Object.keys(images).length
+                        ? 0
+                        : currentImageIndex + 1;
+
+                img.style.backgroundImage = `url(${images[nextIndex]})`;
+                showImage(nextIndex);
+
+            };
+
+            const showImage = (imageKey) => {
+                const currentSvgImage = document.getElementById(
+                    `svg-${currentImageIndex}`
+                );
+
+                currentSvgImage.setAttribute('fill', '#94a3b8');
+
+                currentImageIndex = imageKey;
+
+                img.style.backgroundImage = `url(${images[imageKey]})`;
+
+                const svgImage = document.getElementById(`svg-${imageKey}`);
+
+                svgImage.setAttribute('fill', '#2563eb');
+            };
+
+            if (Object.keys(images).length) {
+                showFirstImage();
+            }
+
+        </script>
+        <!--Carousel-->
+        
+
+        
+        <!--Our Products-->
+        <section class="p-16 w-7/8">
+            <div class="h-32  uppercase text-center">
+                <h1 class="h1 text-5xl">Our Products</h1>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+                <a href="#" class="overflow-hidden">
+                    <img class="w-full h-48 sm:h-64 md:h-72 lg:h-96" src="images/steel.jpg" alt="Generic Shed">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">
+                            Steel Structures
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="overflow-hidden">
+                    <img class="w-full h-48 sm:h-64 md:h-72 lg:h-96" src="images/composite.jpg" alt="Generic Shed">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">
+                            Composite Structures
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="overflow-hidden">
+                    <img class="w-full h-48 sm:h-64 md:h-72 lg:h-96" src="images/wood.jpg" alt="Generic Shed">
+                    <div class="px-6 py-4">
+                        <div class="text-center font-bold text-xl mb-2">
+                            Wooden Structures
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!--Our Products-->
+        
+
+        
+        <!--Why Us-->
+        <section class="p-12">
+            <div class="h-32 uppercase text-center">
+                <h1 class="h1 text-5xl">Why Us?</h1>
+            </div>
+            <!--About Us-->
+            <section class="container w-full mt-4">
+                <div
+                    class="grid grid-cols-12 md:items-center w-full max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl">
+                    <div class="col-span-12 md:col-span-auto md:col-start-1 md:col-end-9 md:row-start-1 md:row-end-1">
+                        <a class="" href="#" title="Image Link">
+                            <picture class="relative block w-full h-0 pb overflow-hidden shadow-lg h-1/2"
+                                style="padding-top: 75%;">
+                                <img class="absolute inset-0 w-full h-full object-cover" src="images/d.jpg"
+                                    alt="A random image from Unsplash">
+                            </picture>
+                        </a>
+                    </div>
+                    <div
+                        class="col-span-12 md:col-span-auto md:col-start-7 md:col-end-13 md:row-start-1 md:row-end-1 md:mt-0 relative z-10 md:px-0">
+                        <div class="p-4 md:p-8 bg-thirty dark:bg-slate-800 shadow-lg">
+                            <p class="mb-2 text-lg leading-none font-medium">
+                                <a class="" href="#" title="Heading Link">
+                                    About Us
+                                </a>
+                            </p>
+                            <p class="mb-2 text-sm">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lacinia mauris. Ut
+                                ac lectus augue. Donec molestie, erat eu consequat pellentesque, quam arcu scelerisque orci,
+                                a fringilla felis magna et dui. Proin dictum ultrices tellus at dapibus.
+                            </p>
+                            <p class="text-xs">
+                                ABCDEFG
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="w-full lg:w-full">
-                    <div class="pt-2 bg-slate-50 dark:bg-slate-800 dark:ring-1 dark:ring-white/10 dark:ring-insetflex">
-                        <div class="grid gap-6 mb-2 lg:grid-cols-2 p-2">
-                            <div>
-                                <label for="name"
-                                    class="block mb-2 text-sm font-medium text-slate-900 dark:text-slate-300">
-                                    Name</label>
-                                <input type="text" id="name" name="name"
-                                    class="bg-slate-50 border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Your name" required>
-                            </div>
+            </section>
+            <!--About Us-->
+        </section>
+        <!--Why Us-->
+        
 
-                            <div>
-                                <label for="email"
-                                    class="block mb-2 text-sm font-medium text-slate-900 dark:text-slate-300">Email
-                                    address</label>
-                                <input type="email" id="email" name="email"
-                                    class="bg-slate-50 border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Your email" required>
-                            </div>
-
-                            <div>
-                                <label for="phone"
-                                    class="block mb-2 text-sm font-medium text-slate-900 dark:text-slate-300">Phone
-                                    number</label>
-                                <input type="tel" id="phone" name="phone"
-                                    class="bg-slate-50 border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            </div>
-
-
-
-                            <div>
-                                <label for="address"
-                                    class="block mb-2 text-sm font-medium text-slate-900 dark:text-slate-300">Address</label>
-                                <input type="text" id="address" name="address"
-                                    class="bg-slate-50 border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            </div>
-
-                        </div>
-
-                        <div class="grid grid-cols-1 mb-2 p-2">
-                            <label for="textarea"
-                                class="block text-sm font-medium text-slate-900 dark:text-slate-300">Your
-                                Message</label>
-                            <textarea id="textarea" name="message"
-                                class="bg-slate-50 h-40 lg:h-[11.75rem] resize-none border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Type your message here" required></textarea>
-                        </div>
-                        <div class="grid place-items-center p-4">
-                            <button type="submit" name="submit" value="Send"
-                                class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-ten ">Submit</button>
+        
+        <!--Form-->
+        <section class="text-gray-800 mt-4">
+            <div class="px-8">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Contact us Today</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Maecenas vitae lacinia mauris. Ut ac lectus augue. Donec molestie, erat eu consequat
+                    pellentesque, quam arcu scelerisque orci, a fringilla felis magna et dui. Proin dictum ultrices tellus
+                    at dapibus.</p>
+                <form method="post" class="">
+                    <div class="w-full lg:w-5/12 lg:float-left">
+                        <div class="h-[500px] w-full">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13261.406183338111!2d-7.047084742714583!3d55.19079229422324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48601b668df48bcb%3A0xa00c7a99731e400!2sGort%20North%2C%20Moville%2C%20Co.%20Donegal!5e0!3m2!1sen!2sie!4v1681853314905!5m2!1sen!2sie"
+                                class="h-full w-full " frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
-                </div>
-            </form>
+                    <div class="w-full lg:w-full">
+                        <div class="pt-2 bg-slate-50 dark:bg-slate-800 dark:ring-1 dark:ring-white/10 dark:ring-insetflex">
+                            <div class="grid gap-6 mb-2 lg:grid-cols-2 p-2">
+                                <div>
+                                    <label for="name"
+                                        class="block mb-2 text-sm font-medium text-slate-900 dark:text-slate-300">
+                                        Name</label>
+                                    <input type="text" id="name" name="name"
+                                        class="bg-slate-50 border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="Your name" required>
+                                </div>
 
-        </div>
-        </div>
-    </section>
-    <!--Form-->
-    
+                                <div>
+                                    <label for="email"
+                                        class="block mb-2 text-sm font-medium text-slate-900 dark:text-slate-300">Email
+                                        address</label>
+                                    <input type="email" id="email" name="email"
+                                        class="bg-slate-50 border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="Your email" required>
+                                </div>
+
+                                <div>
+                                    <label for="phone"
+                                        class="block mb-2 text-sm font-medium text-slate-900 dark:text-slate-300">Phone
+                                        number</label>
+                                    <input type="tel" id="phone" name="phone"
+                                        class="bg-slate-50 border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                </div>
 
 
-    
-    <!--Footer-->
-    <footer class="clear-left p-4 md:flex md:items-center md:justify-between md:p-6">
-        <span class="text-sm text-slate-800 sm:text-center dark:text-slate-400">© 2023 <a href="#"
-                class="hover:underline">Inishowen Garden Sheds</a>
-        </span>
-        <ul class="flex flex-wrap items-center mt-3 text-sm text-slate-800 dark:text-slate-400 sm:mt-0">
-            <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
-            </li>
-            <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-            </li>
-            <li>
-                <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
-            </li>
-            <li>
-                <a href="#" class="hover:underline">Contact</a>
-            </li>
 
-        </ul>
-    </footer>
-    <!--Footer-->
-    
+                                <div>
+                                    <label for="address"
+                                        class="block mb-2 text-sm font-medium text-slate-900 dark:text-slate-300">Address</label>
+                                    <input type="text" id="address" name="address"
+                                        class="bg-slate-50 border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                </div>
 
-</body>
+                            </div>
+
+                            <div class="grid grid-cols-1 mb-2 p-2">
+                                <label for="textarea"
+                                    class="block text-sm font-medium text-slate-900 dark:text-slate-300">Your
+                                    Message</label>
+                                <textarea id="textarea" name="message"
+                                    class="bg-slate-50 h-40 lg:h-[11.75rem] resize-none border border-gray-200 text-slate-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-700 dark:placeholder-slate-400 dark:text-slate-50 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Type your message here" required></textarea>
+                            </div>
+                            <div class="grid place-items-center p-4">
+                                <button type="submit" name="submit" value="Send"
+                                    class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-ten ">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            </div>
+        </section>
+        <!--Form-->
+        
+        <!--Footer-->
+        <footer class="clear-left p-4 md:flex md:items-center md:justify-between md:p-6">
+            <span class="text-sm text-slate-800 sm:text-center dark:text-slate-400">© 2023 <a href="#"
+                    class="hover:underline">Inishowen Garden Sheds</a>
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm text-slate-800 dark:text-slate-400 sm:mt-0">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">Contact</a>
+                </li>
+
+            </ul>
+        </footer>
+        <!--Footer-->
+    </body>
 
 </html>
