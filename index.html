@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-        #dots{
+        #dots {
             fill: #94a3b8;
         }
     </style>
@@ -27,9 +27,9 @@
                 }
                 , colors: {
                     sixty: "D6CECD"
-                    ,ten: "EBD2B4"
-                    ,thirty: "D7BBA8"
-                    ,text: "black"
+                    , ten: "EBD2B4"
+                    , thirty: "D7BBA8"
+                    , text: "black"
                 }
             },
         }
@@ -37,6 +37,8 @@
 </head>
 
 <body class="bg-sixty dark:bg-slate-800 text-slate-text dark:text-slate-50 font-sans">
+    
+    
     <!--Header-->
     <header>
         <nav class="flex items-center justify-between flex-wrap p-12">
@@ -60,13 +62,15 @@
                 <a href="#responsive-header"
                     class="block mt-4 sm:inline-block sm:mt-0 hover:text-black mr-4">Services</a>
                 <div><a href="#"
-                        class="block transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-ten ">Contact
+                        class="block transition mb-5 ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 font-medium rounded-lg text-sm w-full sm:w-auto mt-5 px-5 py-2.5 text-center bg-ten ">Contact
                         us</a></div>
             </div>
         </nav>
     </header>
     <!--Header-->
+    
 
+    
     <!--Carousel-->
     <section class="w-full h-[24rem] justify-center items-center bg-gray-900 relative">
 
@@ -94,7 +98,7 @@
         const images = {
             0: 'images/a.jpg',
             1: 'images/b.jpg',
-            2: 'images/d.jpg',
+            2: 'images/c.jpg',
         };
 
         let currentImageIndex = 0;
@@ -109,7 +113,7 @@
             const dots = Object.keys(images)
                 .map(
                     (imageKey) =>
-                    `<button onclick="showImage(${imageKey})"><svg id=${`svg-${imageKey}`} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg></button>`
+                        `<button onclick="showImage(${imageKey})"><svg id=${`svg-${imageKey}`} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg></button>`
                 )
                 .join('');
 
@@ -164,67 +168,45 @@
 
     </script>
     <!--Carousel-->
+    
 
+    
     <!--Our Products-->
     <section class="p-16 w-7/8">
         <div class="h-32  uppercase text-center">
             <h1 class="h1 text-5xl">Our Products</h1>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-            <div class="border-2 rounded overflow-hidden">
-                <img class="w-full h-96" src="images/steel.jpeg" alt="Generic Shed">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+            <a href="#" class="border-2 rounded overflow-hidden">
+                <img class="w-full h-48 sm:h-64 md:h-72 lg:h-96" src="images/steel.jpg" alt="Generic Shed">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">
-                        Steel Sheds
+                        Steel Structures
                     </div>
                 </div>
-            </div>
-            <div class="border-2 rounded overflow-hidden">
-                <img class="w-full h-96" src="images/chalets.jpeg" alt="Generic Shed">
+            </a>
+            <a href="#" class="border-2 rounded overflow-hidden">
+                <img class="w-full h-48 sm:h-64 md:h-72 lg:h-96" src="images/composite.jpg" alt="Generic Shed">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">
-                        Chalets
+                        Composite Structures
                     </div>
                 </div>
-            </div>
-            <div class="border-2 rounded overflow-hidden">
-                <img class="w-full h-96" src="images/summerhouses.jpeg" alt="Generic Shed">
+            </a>
+            <a href="#" class="border-2 rounded overflow-hidden">
+                <img class="w-full h-48 sm:h-64 md:h-72 lg:h-96" src="images/wood.jpg" alt="Generic Shed">
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">
-                        Summerhouses
+                        Wooden Structures
                     </div>
                 </div>
-            </div>
-            <div class="border-2 rounded overflow-hidden">
-                <img class="w-full h-96" src="images/garages.jpeg" alt="Generic Shed">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Garages
-                    </div>
-                </div>
-            </div>
-            <div class="border-2 rounded overflow-hidden">
-                <img class="w-full h-96" src="images/log.jpeg" alt="Generic Shed">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Log Sheds
-                    </div>
-                </div>
-            </div>
-            <div class="border-2 rounded overflow-hidden">
-                <img class="w-full h-96" src="images/playhouses.jpeg" alt="Generic Shed">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">
-                        Playhouses
-                    </div>
-                </div>
-            </div>
-
-
+            </a>
         </div>
     </section>
     <!--Our Products-->
+    
 
+    
     <!--Why Us-->
     <section class="p-12">
         <div class="h-32 uppercase text-center">
@@ -238,7 +220,7 @@
                     <a class="" href="#" title="Image Link">
                         <picture class="relative block w-full h-0 pb overflow-hidden shadow-lg h-1/2"
                             style="padding-top: 75%;">
-                            <img class="absolute inset-0 w-full h-full object-cover" src="images/f.jpg"
+                            <img class="absolute inset-0 w-full h-full object-cover" src="images/d.jpg"
                                 alt="A random image from Unsplash">
                         </picture>
                     </a>
@@ -252,7 +234,9 @@
                             </a>
                         </p>
                         <p class="mb-2 text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lacinia mauris. Ut ac lectus augue. Donec molestie, erat eu consequat pellentesque, quam arcu scelerisque orci, a fringilla felis magna et dui. Proin dictum ultrices tellus at dapibus.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lacinia mauris. Ut
+                            ac lectus augue. Donec molestie, erat eu consequat pellentesque, quam arcu scelerisque orci,
+                            a fringilla felis magna et dui. Proin dictum ultrices tellus at dapibus.
                         </p>
                         <p class="text-xs">
                             ABCDEFG
@@ -264,12 +248,17 @@
         <!--About Us-->
     </section>
     <!--Why Us-->
+    
 
+    
     <!--Form-->
     <section class="text-gray-800 mt-4">
         <div class="px-8">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Contact us Today</h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae lacinia mauris. Ut ac lectus augue. Donec molestie, erat eu consequat pellentesque, quam arcu scelerisque orci, a fringilla felis magna et dui. Proin dictum ultrices tellus at dapibus.</p>
+            <p class="font-normal text-gray-700 dark:text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Maecenas vitae lacinia mauris. Ut ac lectus augue. Donec molestie, erat eu consequat
+                pellentesque, quam arcu scelerisque orci, a fringilla felis magna et dui. Proin dictum ultrices tellus
+                at dapibus.</p>
             <form method="post" class="">
                 <div class="w-full lg:w-5/12 lg:float-left">
                     <div class="h-[500px] w-full">
@@ -338,7 +327,10 @@
         </div>
     </section>
     <!--Form-->
+    
 
+
+    
     <!--Footer-->
     <footer class="clear-left p-4 md:flex md:items-center md:justify-between md:p-6">
         <span class="text-sm text-slate-800 sm:text-center dark:text-slate-400">© 2023 <a href="#"
@@ -361,6 +353,7 @@
         </ul>
     </footer>
     <!--Footer-->
+    
 
 </body>
 
