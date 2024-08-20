@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Jumbotron</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    Hello Start
+    <!--Carousel-->
+    <section class="w-full h-[32rem] justify-center items-center bg-gray-900 relative">
+
+        <div id="img" class="w-full h-full bg-no-repeat bg-center bg-cover items-center justify-center"
+            script="showFirstImage">
+            <button class="absolute left-0 top-1/3 h-1/3 px-2 flex items-center opacity-50 hover:opacity-100"
+                onclick="showPrevious()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 stroke-current text-white" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button class="absolute right-0 top-1/3 h-1/3 px-2 flex items-center opacity-50 hover:opacity-100"
+                onclick="showNext()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 stroke-current text-white" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+            <div id="dots" class="absolute bottom-0 right-1/2 fill-slate-50 w-auto h-auto flex gap-2"></div>
+
+        </div>
+    </section>
+    <script>
+        const images = {
+            0: 'images/a.jpg',
+            1: 'images/b.jpg',
+            2: 'images/d.jpg',
+        };
+
+        let currentImageIndex = 0;
+
+        const showFirstImage = () => {
+            const imgDiv = document.getElementById('img');
+
+            img.style.backgroundImage = `url(${images[currentImageIndex]})`;
+
+            const dotsDiv = document.getElementById('dots');
+
+            const dots = Object.keys(images)
+                .map(
+                    (imageKey) =>
+                        `<button onclick="showImage(${imageKey})"><svg id=${`svg-${imageKey}`} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg></button>`
+                )
+                .join('');
+
+            dotsDiv.innerHTML = dots;
+
+            showImage(currentImageIndex);
+        };
+
+        const showPrevious = () => {
+            const imgDiv = document.getElementById('img');
+            const previousIndex =
+                currentImageIndex - 1 < 0
+                    ? Object.keys(images).length - 1
+                    : currentImageIndex - 1;
+
+            img.style.backgroundImage = `url(${images[previousIndex]})`;
+            showImage(previousIndex);
+
+        };
+
+        const showNext = () => {
+            const imgDiv = document.getElementById('img');
+            const nextIndex =
+                currentImageIndex + 1 === Object.keys(images).length
+                    ? 0
+                    : currentImageIndex + 1;
+
+            img.style.backgroundImage = `url(${images[nextIndex]})`;
+            showImage(nextIndex);
+
+        };
+
+        const showImage = (imageKey) => {
+            const currentSvgImage = document.getElementById(
+                `svg-${currentImageIndex}`
+            );
+
+            currentSvgImage.setAttribute('fill', '#e2e8f0');
+
+            currentImageIndex = imageKey;
+
+            img.style.backgroundImage = `url(${images[imageKey]})`;
+
+            const svgImage = document.getElementById(`svg-${imageKey}`);
+
+            svgImage.setAttribute('fill', '#334155');
+        };
+
+        if (Object.keys(images).length) {
+            showFirstImage();
+        }
+
+    </script>
+    <!--Carousel-->
+    Hello End
+
+</body>
+
+</html>
